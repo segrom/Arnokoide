@@ -12,19 +12,21 @@ namespace ArnoPhy2D
 
         private void OnDrawGizmosSelected (){
             Gizmos.color = Color.yellow;
-            Gizmos.DrawSphere(leftDownPoint,0.1f);
-            Gizmos.DrawSphere(rightUpPoint,0.1f);
-            Gizmos.DrawSphere(new Vector3( leftDownPoint.x, rightUpPoint.y),0.1f);
-            Gizmos.DrawSphere(new Vector3( rightUpPoint.x, leftDownPoint.y),0.1f);
-            Gizmos.DrawLine(leftDownPoint,new Vector3(leftDownPoint.x,rightUpPoint.y));
-            Gizmos.DrawLine(leftDownPoint,new Vector3(rightUpPoint.x,leftDownPoint.y));
-            Gizmos.DrawLine(rightUpPoint,new Vector3(leftDownPoint.x,rightUpPoint.y));
-            Gizmos.DrawLine(rightUpPoint,new Vector3(rightUpPoint.x,leftDownPoint.y));
+            Vector2 ru = (Vector2) transform.position + rightUpPoint, ld = (Vector2) transform.position + leftDownPoint;
+            Vector2 lu = (Vector2) transform.position + new Vector2( leftDownPoint.x, rightUpPoint.y), rd = (Vector2) transform.position + new Vector2( rightUpPoint.x, leftDownPoint.y);
+            Gizmos.DrawSphere(ru,0.1f);
+            Gizmos.DrawSphere(rd,0.1f);
+            Gizmos.DrawSphere(lu,0.1f);
+            Gizmos.DrawSphere(ld,0.1f);
+            Gizmos.DrawLine(ld,rd);
+            Gizmos.DrawLine(ld,lu);
+            Gizmos.DrawLine(ru,lu);
+            Gizmos.DrawLine(rd,ld);
         }
 
          protected override void Start(){
             ArnoPhy2DManager.Instance.AddShape(this);
-            _center = (rightUpPoint - leftDownPoint) / 2;
+            _center =(rightUpPoint - leftDownPoint) / 2;
             _radius = (leftDownPoint - _center).magnitude;
         }
 
@@ -49,7 +51,7 @@ namespace ArnoPhy2D
         }
 
         public override Vector2 GetWorldCenter(){
-            return  gameObject.transform.TransformPoint(_center);
+            return  (Vector2)transform.position + _center;
         }
 
         public override Vector2 GetCenter(){

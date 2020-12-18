@@ -16,9 +16,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/ArnoPhy2DManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/ArnoShape2D.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/ArnoCircle2D.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/ArnoRigidbody2D.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/ArnoRect2D.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/ArnoCircle2D.cs" />
       </list>
     </option>
   </component>
@@ -61,7 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608280268075</updated>
       <workItem from="1608280271373" duration="523000" />
-      <workItem from="1608280816415" duration="25569000" />
+      <workItem from="1608280816415" duration="26420000" />
     </task>
     <servers />
   </component>

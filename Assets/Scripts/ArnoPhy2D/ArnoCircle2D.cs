@@ -55,7 +55,7 @@ namespace ArnoPhy2D
                 if ((_center-min).magnitude <= radius){
                     normal =_normal= (_center - min).normalized;
                     point =_point= min;
-                    print($"Normal {normal} || point {point}");
+                    //print($"Normal {normal} || point {point}");
                     return;
                 }
                 normal = Vector2.zero;
@@ -69,8 +69,8 @@ namespace ArnoPhy2D
             var minCy = Mathf.Min(c1.y, c2.y);
             var maxCx = Mathf.Max(c1.x, c2.x);
             var maxCy = Mathf.Max(c1.y, c2.y);
-            if( Math.Abs(c1.x - c2.x) < 0.00001f  && Mathf.Abs(c.y) >= minCy&& Mathf.Abs(c.y) <= maxCy) return new Vector2(c1.x,c.y);
-            if( Math.Abs(c1.y - c2.y) < 0.00001f  && Mathf.Abs(c.x) >= minCx&& Mathf.Abs(c.x) <= maxCx) return new Vector2(c.x,c1.y);
+            if( Mathf.Abs(c.y) >= minCy&& Mathf.Abs(c.y) <= maxCy) return new Vector2(c1.x,c.y);
+            if( Mathf.Abs(c.x) >= minCx&& Mathf.Abs(c.x) <= maxCx) return new Vector2(c.x,c1.y);
             if(c.x > maxCx && c.y < minCy) return new Vector2(maxCx, minCy);
             if(c.x > maxCx && c.y > maxCy) return  new Vector2(maxCx, maxCy);
             if(c.x < minCx && c.y > maxCy) return  new Vector2(minCx, maxCy);
