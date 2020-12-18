@@ -15,6 +15,7 @@ namespace ArnoPhy2D
         public Action<Vector2,Vector2 ,ArnoShape2D> OnCollision;
 
         public Vector2 velocity;
+        public Vector2 lastPos;
 
         private void FixedUpdate(){
             var allRects = ArnoPhy2DManager.Instance.GetAllShapes();
@@ -24,13 +25,15 @@ namespace ArnoPhy2D
                     MyShape2D.GetRadius() + otherShape2D.GetRadius()){
                     Vector2 point;
                     Vector2 normal;
-                    MyShape2D.GetCollision(out point, out normal, otherShape2D);
+                    MyShape2D.GetCollision(out point, out normal, otherShape2D,lastPos);
+                    if(point== Vector2.zero && normal == Vector2.zero) continue;
                     OnCollision?.Invoke(point, normal, otherShape2D);
-                    velocity = (velocity.normalized + normal)*velocity.magnitude;
+                    velocity = (velocity.normalized + 2*normal).normalized*velocity.magnitude;
                 }
             }
-
+            lastPos = transform.position;
             transform.position += (Vector3)velocity;
+            
         }
 
         private void Start(){

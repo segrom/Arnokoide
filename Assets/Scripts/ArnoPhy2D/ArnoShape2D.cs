@@ -16,6 +16,6 @@ namespace ArnoPhy2D
             ArnoPhy2DManager.Instance.DeleteShape(this);
         }
 
-        public abstract void GetCollision(out Vector2 point, out Vector2 normal,ArnoShape2D otherShape2D);
+        public abstract void GetCollision(out Vector2 point, out Vector2 normal,ArnoShape2D otherShape2D, Vector2 lastPos);
     }
 }
