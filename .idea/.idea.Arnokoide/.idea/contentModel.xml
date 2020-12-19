@@ -21,12 +21,14 @@
             <e p="AddBallBonus.cs" t="Include" />
             <e p="BallSpeedChangeBonus.cs" t="Include" />
             <e p="Bonus.cs" t="Include" />
+            <e p="UpscalePlayerBonus.cs" t="Include" />
           </e>
           <e p="BonusRaysRotation.cs" t="Include" />
           <e p="Brick.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="LevelManager.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
+          <e p="PlayerManager.cs" t="Include" />
           <e p="SimpleBall.cs" t="Include" />
           <e p="Utils" t="Include">
             <e p="SimpleGridSnap.cs" t="Include" />

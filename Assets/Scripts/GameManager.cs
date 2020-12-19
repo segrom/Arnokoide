@@ -9,17 +9,17 @@ public class GameManager : MonoBehaviour
     private ArnoPhy2DManager _phy2DManager;
     
     public static LevelManager CurrentLevel{ get; private set; }
-    public static PlayerController CurrentPlayer {get; private set; }
-    
+    private LevelManager _currentLevel;
     [SerializeField] private LevelManager[] levels;
     [SerializeField] private int currentLevelNumber = 0;
-    [SerializeField] public PlayerController player;
+
+    public static PlayerManager PlayerManager {get; private set; }
+    [SerializeField] public PlayerManager playerManger;
     
-    private LevelManager _currentLevel;
     private void Awake(){
         DontDestroyOnLoad(this.gameObject);
         _phy2DManager = new ArnoPhy2DManager();
-        CurrentPlayer = player;
+        PlayerManager = playerManger;
     }
 
     private void Start(){
@@ -47,7 +47,8 @@ public class GameManager : MonoBehaviour
         _currentLevel = Instantiate(levels[currentLevelNumber], Vector3.zero, Quaternion.identity);
         _currentLevel.OnLevelComplete = OnLevelComplete;
         _currentLevel.OnLevelFailed = OnLevelFailed;
-        player.ResetPosition();
+        playerManger.CurrentPlayer.ResetPosition();
+        playerManger.Default();
         CurrentLevel = _currentLevel;
     }
 }

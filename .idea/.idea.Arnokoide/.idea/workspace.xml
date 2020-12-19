@@ -20,23 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e0e3d4d-9920-4289-a461-d3c1ff12f9aa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BonusBrick.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BonusBrick.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BonusRaysRotation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BonusRaysRotation.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bonuses.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bonuses/AddBallBonus.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bonuses/AddBallBonus.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bonuses/BallSpeedChangeBonus.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bonuses/BallSpeedChangeBonus.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bonuses/Bonus.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bonuses/Bonus.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bonuses/UpscalePlayerBonus.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bonuses/UpscalePlayerBonus.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerManager.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Arnokoide/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Arnokoide/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Arnokoide/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Arnokoide/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Levels/Level1 Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level1 Variant.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/ArnoRigidbody2D.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/ArnoRigidbody2D.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/ArnoShape2D.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/ArnoShape2D.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BonusBrick.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BonusBrick.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Brick.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Brick.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
     </list>
@@ -65,7 +58,6 @@
         <option value="$PROJECT_DIR$/Assets/Editor/SimpleGridSnap.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils/SimpleGridSnap.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Brick.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SimpleBall.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/ArnoShape2D.cs" />
@@ -74,10 +66,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/BonusRaysRotation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bonuses/Bonus.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bonuses/AddBallBonus.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BonusBrick.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bonuses/BallSpeedChangeBonus.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Bonuses/UpscalePlayerBonus.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Brick.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BonusBrick.cs" />
       </list>
     </option>
   </component>

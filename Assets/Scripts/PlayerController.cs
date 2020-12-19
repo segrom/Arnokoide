@@ -24,6 +24,11 @@ public class PlayerController : MonoBehaviour
     }
 
     public void ResetPosition(){
-        transform.position = new Vector3(0,transform.position.y,transform.position.z);
+        SetX(0);
+    }
+
+    public void SetX(float value){
+        value = Mathf.Clamp(value, minX, maxX);
+        transform.position = new Vector3(value,transform.position.y,transform.position.z);
     }
 }

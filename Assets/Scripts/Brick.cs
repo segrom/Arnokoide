@@ -8,6 +8,8 @@ public class Brick : MonoBehaviour
     [SerializeField] private TextMesh livesText;
     [SerializeField] private ParticleSystem dieFx, smashFx;
 
+    public Action OnDie;
+
     private void Start(){
         livesText.text = lives.ToString();
     }
@@ -19,6 +21,7 @@ public class Brick : MonoBehaviour
             var fx =Instantiate(dieFx, transform);
             fx.transform.parent = null;
             Destroy(gameObject);
+            OnDie?.Invoke();
             AudioManager.PlaySound("brickdie");
         }
         else{
