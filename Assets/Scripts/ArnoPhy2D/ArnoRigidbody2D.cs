@@ -28,7 +28,7 @@ namespace ArnoPhy2D
                     MyShape2D.GetCollision(out point, out normal, otherShape2D,lastPos);
                     if(point== Vector2.zero && normal == Vector2.zero) continue;
                     OnCollision?.Invoke(point, normal, otherShape2D);
-                    velocity = (velocity.normalized + 1.5f*normal).normalized*velocity.magnitude;
+                    if(!otherShape2D.isTrigger && !MyShape2D.isTrigger) velocity = (velocity.normalized + 1.5f*normal).normalized*velocity.magnitude;
                 }
             }
             lastPos = transform.position;

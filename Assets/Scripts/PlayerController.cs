@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float speed = 1;
+    [SerializeField] public float speed = 1;
     [SerializeField] private float minX = -10;
     [SerializeField] private float maxX = 10;
 

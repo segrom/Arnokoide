@@ -159,7 +159,7 @@ MonoBehaviour:
   - name: bonus
     clip: {fileID: 8300000, guid: c7ebe87c413e8fa409bf7be5a3c1d8c2, type: 3}
     source: {fileID: 0}
-    volume: 1
+    volume: 0.6
   - name: brickdie
     clip: {fileID: 8300000, guid: 22e93a03beb4e9c43b0cddb7f201407d, type: 3}
     source: {fileID: 0}
@@ -297,6 +297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82ea1936d398421c8941bb4f6f5c0b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isTrigger: 0
   leftDownPoint: {x: -8.5, y: -3.21}
   rightUpPoint: {x: 8.5, y: 0.5}
 --- !u!23 &1073607656
@@ -358,6 +359,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1226671073 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5354847887849481335, guid: 40fda15ba5f439e4bbbbbe55b849d4a5,
+    type: 3}
+  m_PrefabInstance: {fileID: 5354847886894524310}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e314ca71ad604394bb299206a43c3b8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1941537515
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,6 +402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82ea1936d398421c8941bb4f6f5c0b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isTrigger: 0
   leftDownPoint: {x: -8.5, y: -0.5}
   rightUpPoint: {x: 8.5, y: 2.28}
 --- !u!23 &1941537517
@@ -481,6 +495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82ea1936d398421c8941bb4f6f5c0b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isTrigger: 0
   leftDownPoint: {x: -4.28, y: -7.07}
   rightUpPoint: {x: 0.5, y: 6.78}
 --- !u!23 &1948173689
@@ -573,6 +588,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82ea1936d398421c8941bb4f6f5c0b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isTrigger: 0
   leftDownPoint: {x: -0.5, y: -7.07}
   rightUpPoint: {x: 4.75, y: 6.78}
 --- !u!23 &2039028844
@@ -667,7 +683,7 @@ MonoBehaviour:
   - {fileID: 4342787600837085064, guid: 13113454e9a02e94aa0c1e10f067e782, type: 3}
   - {fileID: 8482861046210537684, guid: be81da14228b28646b4ece4eb35f8011, type: 3}
   currentLevelNumber: 0
-  player: {fileID: 0}
+  player: {fileID: 1226671073}
 --- !u!4 &2145934639
 Transform:
   m_ObjectHideFlags: 0

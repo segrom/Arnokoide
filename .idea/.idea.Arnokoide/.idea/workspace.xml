@@ -20,15 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e0e3d4d-9920-4289-a461-d3c1ff12f9aa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BonusBrick.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BonusBrick.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BonusRaysRotation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BonusRaysRotation.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bonuses.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bonuses/AddBallBonus.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bonuses/AddBallBonus.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bonuses/BallSpeedChangeBonus.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bonuses/BallSpeedChangeBonus.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bonuses/Bonus.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bonuses/Bonus.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Arnokoide/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Arnokoide/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Arnokoide/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Arnokoide/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Levels/Level1 Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level1 Variant.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level2 Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level2 Variant.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sphere.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Sphere.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/ArnoRigidbody2D.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/ArnoRigidbody2D.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/ArnoShape2D.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/ArnoShape2D.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SimpleBall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SimpleBall.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,19 +59,25 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/ArnoPhy2D.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/IArnoShape2D.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/ArnoPhy2DManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/ArnoShape2D.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SimpleBrick.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/ArnoRect2D.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/ArnoCircle2D.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/ArnoRigidbody2D.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/SimpleGridSnap.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils/SimpleGridSnap.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Brick.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SimpleBall.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/ArnoShape2D.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Bonus.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/ArnoRigidbody2D.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BonusRaysRotation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Bonuses/Bonus.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Bonuses/AddBallBonus.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BonusBrick.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Bonuses/BallSpeedChangeBonus.cs" />
       </list>
     </option>
   </component>
@@ -106,7 +122,7 @@
       <updated>1608280268075</updated>
       <workItem from="1608280271373" duration="523000" />
       <workItem from="1608280816415" duration="29200000" />
-      <workItem from="1608365025548" duration="13166000" />
+      <workItem from="1608365025548" duration="19563000" />
     </task>
     <servers />
   </component>

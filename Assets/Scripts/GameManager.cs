@@ -7,14 +7,19 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     private ArnoPhy2DManager _phy2DManager;
+    
+    public static LevelManager CurrentLevel{ get; private set; }
+    public static PlayerController CurrentPlayer {get; private set; }
+    
     [SerializeField] private LevelManager[] levels;
     [SerializeField] private int currentLevelNumber = 0;
-    [SerializeField] private PlayerController player;
+    [SerializeField] public PlayerController player;
     
     private LevelManager _currentLevel;
     private void Awake(){
         DontDestroyOnLoad(this.gameObject);
         _phy2DManager = new ArnoPhy2DManager();
+        CurrentPlayer = player;
     }
 
     private void Start(){
@@ -37,10 +42,12 @@ public class GameManager : MonoBehaviour
     }
 
     private void LoadLevel(){
+        CurrentLevel = null;
         if(_currentLevel!=null)Destroy(_currentLevel.gameObject);
         _currentLevel = Instantiate(levels[currentLevelNumber], Vector3.zero, Quaternion.identity);
         _currentLevel.OnLevelComplete = OnLevelComplete;
         _currentLevel.OnLevelFailed = OnLevelFailed;
         player.ResetPosition();
+        CurrentLevel = _currentLevel;
     }
 }

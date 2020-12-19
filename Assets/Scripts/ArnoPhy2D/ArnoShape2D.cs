@@ -4,10 +4,12 @@ namespace ArnoPhy2D
 {
     public abstract class ArnoShape2D: MonoBehaviour
     {
+        
+        public bool isTrigger = false;
         public abstract Vector2 GetWorldCenter();
         public abstract Vector2 GetCenter();
         public abstract float GetRadius();
-        
+
         protected virtual void Start(){
             ArnoPhy2DManager.Instance.AddShape(this);
         }
