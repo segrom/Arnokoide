@@ -24,12 +24,7 @@ namespace ArnoPhy2D
         }
 
         public Vector2 _normal,_point;
-
-        private void OnDrawGizmos(){
-            Gizmos.color = Color.blue;
-            Gizmos.DrawSphere(_point,0.1f);
-            Gizmos.DrawLine(_point,_point+_normal);
-        }
+        
 
         public override void GetCollision(out Vector2 point, out Vector2 normal, ArnoShape2D otherShape2D,Vector2 lastPos){
             if (otherShape2D.GetType() == typeof(ArnoCircle2D)){
@@ -81,7 +76,10 @@ namespace ArnoPhy2D
             return new Vector2(float.MaxValue,float.MaxValue);
         }    
 
-        private void OnDrawGizmosSelected (){
+        private void OnDrawGizmos(){
+            Gizmos.color = Color.blue;
+            Gizmos.DrawSphere(_point,0.1f);
+            Gizmos.DrawLine(_point,_point+_normal);
             Gizmos.color = Color.yellow;
             var globalCenter = transform.position + (Vector3)center;
             const float step = 0.1f;

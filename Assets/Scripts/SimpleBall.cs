@@ -1,6 +1,7 @@
 ﻿using System;
 using ArnoPhy2D;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace DefaultNamespace
 {
@@ -15,6 +16,17 @@ namespace DefaultNamespace
 
         private void OnCollision(Vector2 point,Vector2 normal,ArnoShape2D other){
             print(other.name);
+            if (other.CompareTag("Brick")){
+                var brick = other.GetComponent<Brick>();
+                brick.BallCollision();
+            }
+            else if (other.CompareTag("Finish")){
+                AudioManager.PlaySound("failed");
+                SceneManager.LoadScene(0);
+            }
+            else{
+                AudioManager.PlaySound("collision");
+            }
         }
     }
 }

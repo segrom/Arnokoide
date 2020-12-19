@@ -20,12 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e0e3d4d-9920-4289-a461-d3c1ff12f9aa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Brick.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Brick.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Arnokoide/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Arnokoide/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Arnokoide/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Arnokoide/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/PlayerMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/PlayerMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Player.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Player.obj.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/ArnoCircle2D.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/ArnoCircle2D.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/ArnoRect2D.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/ArnoRect2D.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/ArnoRigidbody2D.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/ArnoRigidbody2D.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SimpleBall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SimpleBall.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +48,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -45,14 +57,19 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/ArnoPhy2D.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/IArnoShape2D.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/ArnoPhy2DManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/ArnoShape2D.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SimpleBrick.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SimpleBall.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/ArnoRigidbody2D.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/ArnoRect2D.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/ArnoCircle2D.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ArnoPhy2D/ArnoRigidbody2D.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Brick.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/SimpleGridSnap.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utils/SimpleGridSnap.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
       </list>
     </option>
   </component>
@@ -97,7 +114,7 @@
       <updated>1608280268075</updated>
       <workItem from="1608280271373" duration="523000" />
       <workItem from="1608280816415" duration="29200000" />
-      <workItem from="1608365025548" duration="3337000" />
+      <workItem from="1608365025548" duration="11507000" />
     </task>
     <servers />
   </component>

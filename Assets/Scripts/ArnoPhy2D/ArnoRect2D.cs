@@ -10,7 +10,7 @@ namespace ArnoPhy2D
         private Vector2 _center;
         private float _radius;
 
-        private void OnDrawGizmosSelected (){
+        private void OnDrawGizmos(){
             Gizmos.color = Color.yellow;
             Vector2 ru =  (Vector2)transform.position +rightUpPoint, ld = (Vector2)transform.position+leftDownPoint;
             Vector2 lu = (Vector2)transform.position+new Vector2( leftDownPoint.x, rightUpPoint.y), rd =(Vector2)transform.position+ new Vector2( rightUpPoint.x, leftDownPoint.y);

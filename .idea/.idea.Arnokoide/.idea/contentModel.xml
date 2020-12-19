@@ -15,9 +15,15 @@
             <e p="ArnoRigidbody2D.cs" t="Include" />
             <e p="ArnoShape2D.cs" t="Include" />
           </e>
+          <e p="AudioManager.cs" t="Include" />
+          <e p="Brick.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
+          <e p="LevelManager.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="SimpleBall.cs" t="Include" />
+          <e p="Utils" t="Include">
+            <e p="SimpleGridSnap.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

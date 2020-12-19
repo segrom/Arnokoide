@@ -32,7 +32,7 @@ namespace ArnoPhy2D
                 }
             }
             lastPos = transform.position;
-            transform.position += (Vector3)velocity;
+            transform.position += (Vector3)velocity*Time.fixedDeltaTime*100;
             
         }
 
