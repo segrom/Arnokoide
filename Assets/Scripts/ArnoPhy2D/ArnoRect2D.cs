@@ -12,8 +12,8 @@ namespace ArnoPhy2D
 
         private void OnDrawGizmosSelected (){
             Gizmos.color = Color.yellow;
-            Vector2 ru = (Vector2) transform.position + rightUpPoint, ld = (Vector2) transform.position + leftDownPoint;
-            Vector2 lu = (Vector2) transform.position + new Vector2( leftDownPoint.x, rightUpPoint.y), rd = (Vector2) transform.position + new Vector2( rightUpPoint.x, leftDownPoint.y);
+            Vector2 ru =  (Vector2)transform.position +rightUpPoint, ld = (Vector2)transform.position+leftDownPoint;
+            Vector2 lu = (Vector2)transform.position+new Vector2( leftDownPoint.x, rightUpPoint.y), rd =(Vector2)transform.position+ new Vector2( rightUpPoint.x, leftDownPoint.y);
             Gizmos.DrawSphere(ru,0.1f);
             Gizmos.DrawSphere(rd,0.1f);
             Gizmos.DrawSphere(lu,0.1f);
@@ -49,9 +49,25 @@ namespace ArnoPhy2D
         public Vector2 GetRightUp(){
             return rightUpPoint;
         }
+        
+        public Vector2 GetWorldLeftDown(){
+            return (Vector2)transform.position + leftDownPoint;
+        }
+        
+        public Vector2 GetWorldRightUp(){
+            return (Vector2)transform.position +rightUpPoint;
+        }
+        
+        public Vector2 GetWorldLeftUp(){
+            return (Vector2)transform.position + new Vector2(leftDownPoint.x,rightUpPoint.y);
+        }
+        
+        public Vector2 GetWorldRightDown(){
+            return  (Vector2)transform.position + new Vector2(rightUpPoint.x,leftDownPoint.y);
+        }
 
         public override Vector2 GetWorldCenter(){
-            return  (Vector2)transform.position + _center;
+            return  (Vector2)transform.position +  _center;
         }
 
         public override Vector2 GetCenter(){

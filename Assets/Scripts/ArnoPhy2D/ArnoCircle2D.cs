@@ -12,7 +12,7 @@ namespace ArnoPhy2D
         
         
         public override Vector2 GetWorldCenter(){
-            return gameObject.transform.TransformPoint(center);
+            return (Vector2)transform.position + center;
         }
 
         public override Vector2 GetCenter(){
@@ -33,17 +33,17 @@ namespace ArnoPhy2D
 
         public override void GetCollision(out Vector2 point, out Vector2 normal, ArnoShape2D otherShape2D,Vector2 lastPos){
             if (otherShape2D.GetType() == typeof(ArnoCircle2D)){
-                normal = (otherShape2D.GetWorldCenter() - GetWorldCenter()).normalized;
-                point = (otherShape2D.GetWorldCenter() - GetWorldCenter()) / (otherShape2D.GetRadius() / GetRadius());
+                normal =_normal= ( GetWorldCenter()-otherShape2D.GetWorldCenter()).normalized;
+                point =_point=  otherShape2D.GetWorldCenter() + ( GetWorldCenter()-otherShape2D.GetWorldCenter()).normalized * otherShape2D.GetRadius();
                 return;
             }
             else{
                 ArnoRect2D rect = (ArnoRect2D) otherShape2D;
-                var ld =(Vector2)rect.transform.position + rect.GetLeftDown();
-                var ru =(Vector2)rect.transform.position + rect.GetRightUp();
+                var ld =rect.GetWorldLeftDown();
+                var ru =rect.GetWorldRightUp();
                 var _center = (Vector2)transform.position+center;
-                var lu = new Vector2(ld.x,ru.y);
-                var rd = new Vector2(ru.x,ld.y);
+                var lu =rect.GetWorldLeftUp();
+                var rd =rect.GetWorldRightDown();
                 var pointUp = GetClosestNormalPoint(lu, ru, _center);
                 var pointDown = GetClosestNormalPoint(ld, rd, _center);
                 var pointLeft = GetClosestNormalPoint(ld, lu, _center);
@@ -53,7 +53,10 @@ namespace ArnoPhy2D
                     if ((_center - p).magnitude < (_center - min).magnitude) min = p;
                 }
                 if ((_center-min).magnitude <= radius){
-                    normal =_normal= (_center - min).normalized;
+                    if (_center.x > ld.x && _center.x < ru.x && _center.y > ld.y && _center.y < ru.y){
+                        normal =_normal= -(_center - min).normalized;
+                    }
+                    else{normal =_normal= (_center - min).normalized;}
                     point =_point= min;
                     //print($"Normal {normal} || point {point}");
                     return;
@@ -69,8 +72,8 @@ namespace ArnoPhy2D
             var minCy = Mathf.Min(c1.y, c2.y);
             var maxCx = Mathf.Max(c1.x, c2.x);
             var maxCy = Mathf.Max(c1.y, c2.y);
-            if( Mathf.Abs(c.y) >= minCy&& Mathf.Abs(c.y) <= maxCy) return new Vector2(c1.x,c.y);
-            if( Mathf.Abs(c.x) >= minCx&& Mathf.Abs(c.x) <= maxCx) return new Vector2(c.x,c1.y);
+            if( c.y >= minCy&& c.y <= maxCy) return new Vector2(c1.x,c.y);
+            if( c.x >= minCx&& c.x <= maxCx) return new Vector2(c.x,c1.y);
             if(c.x > maxCx && c.y < minCy) return new Vector2(maxCx, minCy);
             if(c.x > maxCx && c.y > maxCy) return  new Vector2(maxCx, maxCy);
             if(c.x < minCx && c.y > maxCy) return  new Vector2(minCx, maxCy);

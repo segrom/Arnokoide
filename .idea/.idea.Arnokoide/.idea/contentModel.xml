@@ -16,6 +16,8 @@
             <e p="ArnoShape2D.cs" t="Include" />
           </e>
           <e p="GameManager.cs" t="Include" />
+          <e p="PlayerController.cs" t="Include" />
+          <e p="SimpleBall.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
