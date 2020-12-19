@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
     }
 
     private void OnLevelComplete(){
-        if (currentLevelNumber < levels.Length){
+        if (currentLevelNumber+1 < levels.Length){
             currentLevelNumber++;
         }
         else{
@@ -32,10 +32,15 @@ public class GameManager : MonoBehaviour
         LoadLevel();
     }
 
+    private void OnLevelFailed(){
+        LoadLevel();
+    }
+
     private void LoadLevel(){
         if(_currentLevel!=null)Destroy(_currentLevel.gameObject);
         _currentLevel = Instantiate(levels[currentLevelNumber], Vector3.zero, Quaternion.identity);
         _currentLevel.OnLevelComplete = OnLevelComplete;
+        _currentLevel.OnLevelFailed = OnLevelFailed;
         player.ResetPosition();
     }
 }

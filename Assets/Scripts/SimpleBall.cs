@@ -21,8 +21,7 @@ namespace DefaultNamespace
                 brick.BallCollision();
             }
             else if (other.CompareTag("Finish")){
-                AudioManager.PlaySound("failed");
-                SceneManager.LoadScene(0);
+                Destroy(gameObject);
             }
             else{
                 AudioManager.PlaySound("collision");

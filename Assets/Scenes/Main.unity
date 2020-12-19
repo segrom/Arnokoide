@@ -121,6 +121,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 373830795}
+  - component: {fileID: 373830796}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -142,6 +143,47 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &373830796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373830794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227da5764c6d4f00ada938d127f07dd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: bonus
+    clip: {fileID: 8300000, guid: c7ebe87c413e8fa409bf7be5a3c1d8c2, type: 3}
+    source: {fileID: 0}
+    volume: 1
+  - name: brickdie
+    clip: {fileID: 8300000, guid: 22e93a03beb4e9c43b0cddb7f201407d, type: 3}
+    source: {fileID: 0}
+    volume: 0.5
+  - name: collision
+    clip: {fileID: 8300000, guid: 7476fee45fd7263449a96ad145c457ef, type: 3}
+    source: {fileID: 0}
+    volume: 0.7
+  - name: complete
+    clip: {fileID: 8300000, guid: 8ca5d1409892d924ea3336b403414228, type: 3}
+    source: {fileID: 0}
+    volume: 0.7
+  - name: failed
+    clip: {fileID: 8300000, guid: 9f9a2fc1812b6a14489ffaa7c855f02c, type: 3}
+    source: {fileID: 0}
+    volume: 0.7
+  - name: interact
+    clip: {fileID: 8300000, guid: 28906e7a2a8f18540a9d310640f3017d, type: 3}
+    source: {fileID: 0}
+    volume: 1
+  - name: smash
+    clip: {fileID: 8300000, guid: 9afcfaa4146f69b4db05e77cb6477dda, type: 3}
+    source: {fileID: 0}
+    volume: 1
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
